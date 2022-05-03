@@ -8,7 +8,7 @@ const path = require('path');
 const config = {
   title: 'Site',
   tagline: 'Dinosaurs are cool',
-  url: 'http://localhost:3001/',
+  url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,41 +72,7 @@ const config = {
 
          ],
 
-    [
-          "@docusaurus/plugin-pwa",
-      {
-        offlineModeActivationStrategies:
-        [
-          'appInstalled',
-          'standalone',
-          'queryString',
-        ],
-        pwaHead: 
-        [
-          {
-            tagName: "link",
-            rel: "manifest",
-            href: "/manifest.webmanifest",
-          },
-          {
-            tagName: "meta",
-            name: "theme-color",
-            content: "#d14671",
-          },
-          {
-            tagName: "meta",
-            name: "apple-mobile-web-app-capable",
-            content: "yes",
-          },
-          {
-            tagName: "meta",
-            name: "apple-mobile-web-app-status-bar-style",
-            content: "#21222c",
-          },
-        ],
-      },
-
-        ],
+  
 
     
    ],
