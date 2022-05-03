@@ -1,0 +1,49 @@
+## live theme codeblock
+
+1. first run this code
+
+> npm i @docusaurus/theme-live-codeblock 
+
+2. then add a `themes` section in `docusaurus.config.js` file and add the name of the theme i.e.
+
+> @docusaurus/theme-live-codeblock
+
+
+```jsx live
+function examplelive(props){
+    const[ count , setCount ] = useState(0);
+
+    return(
+        <div>
+        <h1>{count}</h1>
+        <button onClick={() => setCount(count+1)}>ADD</button>
+        </div>
+    )
+}     
+```
+
+import { Mermaid } from 'mdx-mermaid/Mermaid'
+
+<Mermaid chart={`sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!`} />
+
+
+
+```mermaid
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+```
